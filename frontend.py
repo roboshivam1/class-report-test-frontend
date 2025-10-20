@@ -3,7 +3,7 @@ import requests
 import io
 
 # ---------- CONFIG ----------
-BACKEND_URL = "https://class-report-test-backend-3.onrender.com/"  # 🔹 replace with your actual Render URL
+BACKEND_URL = "https://class-report-test-backend-3.onrender.com/process_class"  # 🔹 replace with your actual Render URL
 
 st.set_page_config(page_title="Classroom Audio Monitor", page_icon="🎙️", layout="centered")
 
@@ -67,4 +67,5 @@ if submitted:
 
             except Exception as e:
                 st.error(f"Error connecting to backend: {e}")
+
 
